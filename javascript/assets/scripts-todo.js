@@ -3,7 +3,7 @@ function addTask() {
     var item = document.createElement("li");
     var task = document.createElement("span");
     var checkbox = document.createElement("input");
-    item.setAttribute("class", "unchecked");
+    // item.setAttribute("class", "unchecked");
     task = document.getElementById("task").value;
     checkbox.type = "checkbox";
     if (document.getElementById("task").value === '') {
@@ -17,11 +17,7 @@ function addTask() {
     item.addEventListener('click', checked);
 }
 
+
 function checked() {
-    this.className = "checked";
-}
-
-
-function unchecked() {
-    this.className = "unchecked";
+    this.classList.toggle('checked');
 }
