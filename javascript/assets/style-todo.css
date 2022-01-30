@@ -24,8 +24,10 @@ button {
 
 input[type="text"] {
     width: 250px;
-    height: 30px;
+    height: 35px;
     font-size: 18px;
+    border-radius: 5px;
+    border: 2px solid black;
 }
 
 input[type="checkbox"] {
@@ -34,6 +36,8 @@ input[type="checkbox"] {
     height: 20px;
     margin-right: 20px;
     margin-bottom: 5px;
+    background-color: grey;
+    cursor: pointer;
 }
 
 li {
