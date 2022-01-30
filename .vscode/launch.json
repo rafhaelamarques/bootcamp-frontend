@@ -4,12 +4,30 @@
     // Para obter mais informações, acesse: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
+        // {
+        //     "name": "Attach Node.js",
+        //     "processId": "${command:PickProcess}",
+        //     "request": "attach",
+        //     "skipFiles": [
+        //         "<node_internals>/**"
+        //     ],
+        //     "type": "pwa-node"
+        // },
         {
-            "type": "pwa-chrome",
+            "type": "pwa-node",
             "request": "launch",
-            "name": "Launch Chrome against localhost",
-            "url": "http://localhost:8080",
-            "webRoot": "${workspaceFolder}"
-        }
+            "name": "Launch URL Shortener",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/src/server.js"
+        },
+        // {
+        //     "type": "pwa-chrome",
+        //     "request": "launch",
+        //     "name": "Launch Chrome against localhost",
+        //     "url": "http://localhost:3000",
+        //     "webRoot": "${workspaceFolder}"
+        // }
     ]
 }
