@@ -19,7 +19,7 @@ button:not(.reset) {
     border-style: none;
     margin: 20px;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 40px;
 }
 
 button:disabled {
@@ -35,5 +35,5 @@ button:disabled {
     width: 150px;
     height: 45px;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 25px;
 }
